@@ -1,11 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
-html,body,#root,.app{
+html,
+body,
+#root,
+.app {
   height: 100%;
   width: 100%;
   font-family: 'Inter', sans-serif;
   background-color: #1f2026;
 }
-h1{
+
+h1 {
   color: aqua;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+indigo: {
+    100: "#d1dbfb",
+    200: "#a3b8f8",
+    300: "#7494f4",
+    400: "#4671f1",
+    500: "#184ded",
+    600: "#133ebe",
+    700: "#0e2e8e",
+    800: "#0a1f5f",
+    900: "#050f2f"
+},
