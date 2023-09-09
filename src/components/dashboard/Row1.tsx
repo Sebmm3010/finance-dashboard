@@ -1,6 +1,8 @@
+import { useGetKpisQuery } from '@/api';
 import { DashboardBox } from '..';
 
 export const Row1 = () => {
+  const { data } = useGetKpisQuery('');
   return (
     <>
       <DashboardBox gridArea="a"></DashboardBox>
