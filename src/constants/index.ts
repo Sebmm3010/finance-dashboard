@@ -1,4 +1,4 @@
-export const gridTemplate = `
+export const gridTemplateLg = `
     "a b c"
     "a b c"
     "a b c"
@@ -10,4 +10,37 @@ export const gridTemplate = `
     "g h i"
     "g h j"
     "g h j"
+`;
+
+export const gridTemplateSm = `
+    "a"
+    "a"
+    "a"
+    "a"
+    "b"
+    "b"
+    "b"
+    "b"
+    "b"
+    "c"
+    "c"
+    "c"
+    "d"
+    "d"
+    "d"
+    "e"
+    "e"
+    "f"
+    "f"
+    "g"
+    "g"
+    "g"
+    "h"
+    "h"
+    "h"
+    "h"
+    "i"
+    "i"
+    "j"
+    "j"
 `;
