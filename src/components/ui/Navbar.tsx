@@ -11,7 +11,11 @@ export const Navbar = () => {
     <FlexBetween mb="0.25rem" p="0.5rem 0rem" color={palette.grey[300]}>
       <FlexBetween gap="0.75rem">
         {/* Icon */}
-        <DashboardIcon sx={{ fontSize: '28px' }} />
+        <DashboardIcon
+          sx={{ fontSize: '28px' }}
+          style={{ color: palette.primary[500] }}
+        />
+
         <Typography variant="h4" fontSize="16px">
           Dashboard
         </Typography>
