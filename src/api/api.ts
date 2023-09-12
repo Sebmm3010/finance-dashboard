@@ -1,3 +1,4 @@
+import { IKpi } from '@/interfaces';
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 export const reduxApi = createApi({
@@ -5,8 +6,8 @@ export const reduxApi = createApi({
   reducerPath: 'main',
   tagTypes: ['Kpis'],
   endpoints: (build) => ({
-    getKpis: build.query({
-      query: () => 'kpi/kpis/',
+    getKpis: build.query<IKpi[], any>({
+      query: () => '/kpis',
       providesTags: ['Kpis']
     })
   })
