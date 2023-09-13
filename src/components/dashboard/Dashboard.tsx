@@ -3,7 +3,7 @@ import { gridTemplateLg, gridTemplateSm } from '@/constants';
 import { Row1, Row2, Row3 } from '..';
 
 export const Dashboard = () => {
-  const isMdScreen = useMediaQuery('(min-width:1200px)');
+  const isMdScreen = useMediaQuery('(min-width: 1200px)');
 
   return (
     <Box
@@ -15,7 +15,7 @@ export const Dashboard = () => {
         isMdScreen
           ? {
               gridTemplateColumns: 'repeat(3, minmax(370px, 1fr))',
-              gridTempleteRows: 'repeat(10, minmax(60px, 1fr))',
+              gridTemplateRows: 'repeat(10, minmax(60px, 1fr))',
               gridTemplateAreas: gridTemplateLg
             }
           : {
