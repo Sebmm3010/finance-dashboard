@@ -5,8 +5,8 @@ import { Box, Typography, useTheme } from '@mui/material';
 interface Props {
   icon?: ReactNode;
   title: string;
-  sideText: string;
-  subTitle: string;
+  sideText?: string;
+  subTitle?: string;
 }
 
 export const BoxHeader: FC<Props> = ({ icon, title, subTitle, sideText }) => {
