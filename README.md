@@ -1,27 +1,63 @@
-# React + TypeScript + Vite
+<h1 align="center">
+  <br>
+  Dashboard Financiero
+  <br>
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h4 align="center">Este proyecto es un dashboard administrativo que permite visualizar y predecir los ingresos de una empresa. Está desarrollado con React y utiliza una API para obtener los datos. También incluye un modelo de machine learning para hacer predicciones de los ingresos del siguiente año.</h4>
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="#caracteristicas">Caracteristicas</a> •
+  <a href="#como-usar">Como usar?</a> •
+  <a href="#creditos">Creditos</a> •
+  <a href="#licencia">Licencia</a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![screenshot](/public/preview_dashboard.PNG)
+![screenshot2](/public/preview_projection.PNG)
 
-## Expanding the ESLint configuration
+## Caracteristicas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Multiples graficas.
+- Página de proyección de ingresos futuros potenciados con machine learning.
 
-- Configure the top-level `parserOptions` property like this:
+## Como usar?
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+Para clonar este repositorio se necesita [Git](https://git-scm.com) y [Node.js](https://nodejs.org/en/download/) (que viene con [npm](http://npmjs.com)) instalado en tu computadora. Desde tu línea de comando:
+
+```bash
+# Clonar repositorio
+$ git clone https://github.com/Sebmm3010/finance-dashboard
+
+# Ir al repositorio
+$ cd electron-markdownify
+
+# Instalar dependencias
+$ npm install
+$ yarn install
+$ pnpm install
+
+# Iniciar en desarrollo
+$ dev
+# Iniciar en produccion
+$ build
+$ preview
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Creditos
+
+This software uses the following open source packages:
+
+- [Node.js](https://nodejs.org/)
+- [Material Ui](https://mui.com/)
+- [Recharts](https://recharts.org/en-US/)
+- [Regression js](https://tom-alexander.github.io/regression-js/)
+
+## Licencia
+
+MIT
+
+---
+
+> GitHub [@Sebmm3010](https://github.com/Sebmm3010) &nbsp;&middot;&nbsp;
+> Twitter [@M1999Sebastian](https://twitter.com/M1999Sebastian)
