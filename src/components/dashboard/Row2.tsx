@@ -16,10 +16,11 @@ import {
   ZAxis
 } from 'recharts';
 import { useTheme, Box, Typography } from '@mui/material';
+import { pieColors } from '@/constants';
 
 export const Row2 = () => {
   const { palette } = useTheme();
-  const pieColors = [palette.primary[800], palette.primary[300]];
+  // const pieColors = [palette.primary[800], palette.primary[300]];
   const { operationalExpenses, pieData, productExpenseData } = useData();
   return (
     <>

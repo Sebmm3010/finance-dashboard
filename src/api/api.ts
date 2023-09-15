@@ -1,10 +1,10 @@
-import { IKpi, IProduct } from '@/interfaces';
+import { IKpi, IProduct, ITransactions } from '@/interfaces';
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 export const reduxApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_BASE_URL }),
   reducerPath: 'main',
-  tagTypes: ['Kpis', 'Products'],
+  tagTypes: ['Kpis', 'Products', 'Transactions'],
   endpoints: (build) => ({
     getKpis: build.query<IKpi[], any>({
       query: () => '/kpis',
@@ -13,8 +13,13 @@ export const reduxApi = createApi({
     getProducts: build.query<IProduct[], any>({
       query: () => '/products',
       providesTags: ['Products']
+    }),
+    getTransactions: build.query<ITransactions[], any>({
+      query: () => '/transactions',
+      providesTags: ['Transactions']
     })
   })
 });
 
-export const { useGetKpisQuery, useGetProductsQuery } = reduxApi;
+export const { useGetKpisQuery, useGetProductsQuery, useGetTransactionsQuery } =
+  reduxApi;
