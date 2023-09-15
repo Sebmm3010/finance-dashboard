@@ -2,6 +2,10 @@
   <br>
   Dashboard Financiero
   <br>
+  <p align="center">
+    <a href="https://finance-dashboard-nine-rouge.vercel.app/">Ver demo del proyecto</a>
+    .
+  </p>
 </h1>
 
 <h4 align="center">Este proyecto es un dashboard administrativo que permite visualizar y predecir los ingresos de una empresa. Está desarrollado con React y utiliza una API para obtener los datos. También incluye un modelo de machine learning para hacer predicciones de los ingresos del siguiente año.</h4>
