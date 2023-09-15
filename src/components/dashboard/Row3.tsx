@@ -1,9 +1,9 @@
 import { DataGrid } from '@mui/x-data-grid';
 import { Box, useTheme, Typography } from '@mui/material';
+import { Cell, Pie, PieChart } from 'recharts';
 import { BoxHeader, DashboardBox, FlexBetween } from '..';
 import { useData } from '@/hooks';
 import { pieColors, productColumns, transactionColumns } from '@/constants';
-import { Cell, Pie, PieChart } from 'recharts';
 
 export const Row3 = () => {
   const { palette } = useTheme();

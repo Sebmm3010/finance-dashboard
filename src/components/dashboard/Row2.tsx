@@ -1,5 +1,4 @@
-import { useData } from '@/hooks';
-import { BoxHeader, DashboardBox, FlexBetween } from '..';
+import { useTheme, Box, Typography } from '@mui/material';
 import {
   CartesianGrid,
   Cell,
@@ -15,12 +14,12 @@ import {
   YAxis,
   ZAxis
 } from 'recharts';
-import { useTheme, Box, Typography } from '@mui/material';
+import { useData } from '@/hooks';
 import { pieColors } from '@/constants';
+import { BoxHeader, DashboardBox, FlexBetween } from '..';
 
 export const Row2 = () => {
   const { palette } = useTheme();
-  // const pieColors = [palette.primary[800], palette.primary[300]];
   const { operationalExpenses, pieData, productExpenseData } = useData();
   return (
     <>

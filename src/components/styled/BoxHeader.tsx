@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react';
-import { FlexBetween } from '.';
 import { Box, Typography, useTheme } from '@mui/material';
+import { FlexBetween } from '.';
 
 interface Props {
   icon?: ReactNode;

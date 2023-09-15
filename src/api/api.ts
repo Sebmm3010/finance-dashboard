@@ -1,5 +1,5 @@
-import { IKpi, IProduct, ITransactions } from '@/interfaces';
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { IKpi, IProduct, ITransactions } from '@/interfaces';
 
 export const reduxApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_BASE_URL }),

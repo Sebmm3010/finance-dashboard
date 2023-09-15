@@ -1,9 +1,9 @@
+import { useMemo } from 'react';
 import {
   useGetKpisQuery,
   useGetProductsQuery,
   useGetTransactionsQuery
 } from '@/api';
-import { useMemo } from 'react';
 
 export const useData = () => {
   const { data: kpisData } = useGetKpisQuery('');
