@@ -56,13 +56,13 @@ export const productColumns: GridColDef[] = [
   },
   {
     field: 'expense',
-    headerName: 'Gasto',
+    headerName: 'Gastos',
     flex: 0.5,
     renderCell: (params) => `${params.value}`
   },
   {
     field: 'price',
-    headerName: 'Precio',
+    headerName: 'Precios',
     flex: 0.5,
     renderCell: (params) => `${params.value}`
   }
@@ -76,7 +76,7 @@ export const transactionColumns: GridColDef[] = [
   },
   {
     field: 'buyer',
-    headerName: 'Comprador',
+    headerName: 'Compradores',
     flex: 0.67
   },
   {

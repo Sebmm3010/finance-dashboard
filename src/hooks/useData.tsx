@@ -17,8 +17,8 @@ export const useData = () => {
       return kpisData[0].monthlyData.map(({ month, revenue, expenses }) => {
         return {
           name: month.substring(0, 3),
-          revenue,
-          expenses
+          Ganancias: revenue,
+          Gastos: expenses
         };
       });
     }
@@ -29,8 +29,8 @@ export const useData = () => {
       return kpisData[0].monthlyData.map(({ month, revenue, expenses }) => {
         return {
           name: month.substring(0, 3),
-          revenue,
-          profit: (revenue - expenses).toFixed(2)
+          ganancias: revenue,
+          beneficios: (revenue - expenses).toFixed(2)
         };
       });
     }
@@ -42,8 +42,8 @@ export const useData = () => {
         ({ month, operationalExpenses, nonOperationalExpenses }) => {
           return {
             name: month.substring(0, 3),
-            operationalExpenses,
-            nonOperationalExpenses
+            'Gastos operativos': operationalExpenses,
+            'Gastos no operativos': nonOperationalExpenses
           };
         }
       );

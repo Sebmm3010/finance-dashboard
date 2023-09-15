@@ -82,7 +82,7 @@ export const Row1 = () => {
             />
             <Area
               type="monotone"
-              dataKey="revenue"
+              dataKey="Ganancias"
               dot={true}
               stroke={palette.primary.main}
               fillOpacity={1}
@@ -90,7 +90,7 @@ export const Row1 = () => {
             />
             <Area
               type="monotone"
-              dataKey="expenses"
+              dataKey="Gastos"
               dot={true}
               stroke={palette.primary.main}
               fillOpacity={1}
@@ -150,13 +150,13 @@ export const Row1 = () => {
             <Line
               yAxisId="left"
               type="monotone"
-              dataKey="profit"
+              dataKey="beneficios"
               stroke={palette.tertiary[500]}
             />
             <Line
               yAxisId="right"
               type="monotone"
-              dataKey="revenue"
+              dataKey="ganancias"
               stroke={palette.primary.main}
             />
           </LineChart>
@@ -215,7 +215,7 @@ export const Row1 = () => {
               labelStyle={{ color: palette.grey[200], textAlign: 'center' }}
               cursor={{ fill: 'transparent' }}
             />
-            <Bar dataKey="revenue" fill="url(#colorRevenueBar)" />
+            <Bar dataKey="ganancias" fill="url(#colorRevenueBar)" />
           </BarChart>
         </ResponsiveContainer>
       </DashboardBox>

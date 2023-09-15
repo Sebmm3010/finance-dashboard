@@ -67,13 +67,13 @@ export const Row2 = () => {
             <Line
               yAxisId="left"
               type="monotone"
-              dataKey="nonOperationalExpenses"
+              dataKey="Gastos no operativos"
               stroke={palette.tertiary[500]}
             />
             <Line
               yAxisId="right"
               type="monotone"
-              dataKey="operationalExpenses"
+              dataKey="Gastos operativos"
               stroke={palette.primary.main}
             />
           </LineChart>
