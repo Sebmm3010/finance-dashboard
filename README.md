@@ -30,7 +30,7 @@ Para clonar este repositorio se necesita [Git](https://git-scm.com) y [Node.js](
 $ git clone https://github.com/Sebmm3010/finance-dashboard
 
 # Ir al repositorio
-$ cd electron-markdownify
+$ cd finance-dashboard
 
 # Instalar dependencias
 $ npm install
