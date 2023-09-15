@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import regression, { DataPoint } from 'regression';
 import {
   useGetKpisQuery,
   useGetProductsQuery,
@@ -69,6 +70,22 @@ export const useData = () => {
     }
   }, [kpisData]);
 
+  const formattedData = useMemo(() => {
+    if (!kpisData) return [];
+    const monthData = kpisData[0].monthlyData;
+    const formatted = monthData.map(({ revenue }, i) => {
+      return [i, revenue];
+    });
+    const regressionLine = regression.linear(formatted as DataPoint[]);
+    return monthData.map(({ month, revenue }, i) => {
+      return {
+        name: month,
+        'Ingresos actuales': revenue,
+        Regresion: regressionLine.points[i][1],
+        'Prediccion de ingresos': regressionLine.predict(i + 12)[1]
+      };
+    });
+  }, [kpisData]);
   // ? Products Data
   const pieData = [
     { name: 'Grupo A', value: 600 },
@@ -86,6 +103,7 @@ export const useData = () => {
     }
   }, [productsData]);
   return {
+    formattedData,
     operationalExpenses,
     pieChartData,
     pieData,

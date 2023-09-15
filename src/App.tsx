@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { createTheme } from '@mui/material/styles';
 import { Box, CssBaseline, ThemeProvider } from '@mui/material';
 import { themeSettings } from '@/themes';
-import { Dashboard, Navbar } from '@/components';
+import { Dashboard, Navbar, ProjectionPlot } from '@/components';
 function App() {
   const theme = useMemo(() => createTheme(themeSettings), []);
 
@@ -16,10 +16,7 @@ function App() {
             <Navbar />
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              <Route
-                path="/proyecciones"
-                element={<div>Projections page</div>}
-              />
+              <Route path="/proyecciones" element={<ProjectionPlot />} />
             </Routes>
           </Box>
         </ThemeProvider>
